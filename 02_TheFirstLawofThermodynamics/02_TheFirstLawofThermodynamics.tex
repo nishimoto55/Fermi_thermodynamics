@@ -1,0 +1,291 @@
+\documentclass[dvipdfmx, 10pt, aspectratio = 169]{beamer}
+
+\usepackage{graphicx}
+\usepackage{amsmath}
+\usepackage{bm}
+\usepackage{braket}
+
+\usetheme[
+	block = fill, 
+	progressbar = foot,
+	numbering = fraction
+]{metropolis}
+
+\setbeamerfont{frame numbering}{size = \normalsize}
+\usefonttheme[onlymath]{serif}
+
+\title{Thermodynamics}
+\subtitle{2 The First Law of Thermodynamics}
+\date{\today}
+\author{Enrico Fermi}
+
+\AtBeginSubsection[]{
+   \begin{frame}{目次}
+        \tableofcontents[currentsection, 
+        subsectionstyle = show/shaded/hide]
+    \end{frame}
+}
+
+\begin{document}
+
+\begin{frame}
+	\titlepage
+\end{frame}
+
+\begin{frame}{目次}
+\tableofcontents
+\end{frame}
+
+\section{2 The First Law of Thermodynamics}
+\subsection{2.1 The statement of the first law of thermidynamics.}
+
+\begin{frame}{title}
+	\begin{align*}
+		U_A = U_B
+	\end{align*}
+	\begin{align}
+		U_B - U_A = -L
+	\end{align}
+	\begin{align}
+		U_O = 0
+	\end{align}
+	\begin{align}
+		U_A = - L_A
+	\end{align}
+\end{frame}
+
+\begin{frame}{title}
+	\begin{align*}
+		L = -L_A + L_B
+	\end{align*}
+	\begin{align*}
+		U_B = -L_B
+	\end{align*}
+	\begin{align*}
+		U_B - U_A = -L
+	\end{align*}
+\end{frame}
+
+\begin{frame}{title}
+	\begin{align*}
+		L_A^\prime = L_{O^\prime O} + L_A
+	\end{align*}
+	\begin{align*}
+		U_A = -L_A; \quad U_A^\prime = -L_A^\prime
+	\end{align*}
+	\begin{align*}
+		U_A - U_A^\prime = L_{O^\prime O}
+	\end{align*}
+\end{frame}
+
+\begin{frame}{title}
+	\begin{align}
+		\Delta U + L = 0
+	\end{align}
+	\begin{align}
+		\Delta U + L = Q
+	\end{align}
+	\begin{align*}
+		\Delta U = -L + Q
+	\end{align*}
+	\begin{align}
+		 L = Q
+	\end{align}
+\end{frame}
+
+\begin{frame}{title}
+	\begin{align}
+		\Delta U_c = m \Delta u_c; \quad L_c = ml_c
+	\end{align}
+	\begin{align*}
+		\Delta U = \Delta U_S + \Delta U_c
+	\end{align*}
+\end{frame}
+
+\begin{frame}{title}
+	\begin{align*}
+		L = L_S + L_c
+	\end{align*}
+	\begin{align*}
+		\Delta U_S + \Delta U_c + L_S + L_c = 0
+	\end{align*}
+	\begin{align*}
+		\Delta U_S + L_S &= -(\Delta U_c + L_c) \\
+		&= -m(\Delta U_c + l_c)
+	\end{align*}
+	\begin{align}
+		Q_S = -m(\Delta U_c + l_c)
+	\end{align}
+\end{frame}
+
+\begin{frame}{title}
+	\begin{align}
+		1 \ {\rm calorie} = 4.185 \times 10^7 \ {\rm ergs}
+	\end{align}
+\end{frame}
+
+\subsection{2.2 The application of the first law to systems whose states can be represented on a $(V, p)$ diagram.}
+
+\begin{frame}{title}
+	\begin{align}
+		dU + dL = dQ
+	\end{align}
+	\begin{align}
+		dU + pdV = dQ
+	\end{align}
+	\begin{align*}
+		dU = \left( \frac{\partial U}{\partial T} \right)_V dT + \left( \frac{\partial U}{\partial V} \right)_T dV
+	\end{align*}
+\end{frame}
+
+\begin{frame}{title}
+	\begin{align}
+		\left(\frac{\partial U}{\partial T}\right)_V dT + \left[ \left( \frac{\partial U}{\partial V} \right)_T + p \right] dV = dQ
+	\end{align}
+	
+	\begin{align}
+		\left[ \left( \frac{\partial U}{\partial T} \right)_p + p \left( \frac{\partial V}{\partial T} \right)_p \right] dT + \left[ \left( \frac{\partial U}{\partial p} \right)_T + p\left( \frac{\partial V}{\partial p} \right)_T \right] dp = dQ
+	\end{align}
+	
+	\begin{align}
+		\left( \frac{\partial U}{\partial p} \right)_V dp + \left[ \left( \frac{\partial U}{\partial V} \right)_p + p \right]dV = dQ
+	\end{align}
+\end{frame}
+
+\begin{frame}{title}
+	\begin{align}
+		C_V = \left( \frac{dQ}{dT} \right)_V = \left( \frac{\partial U}{\partial T} \right)_T
+	\end{align}
+	
+	\begin{align}
+		C_p = \left( \frac{dQ}{dT} \right)_p = \left( \frac{\partial U}{\partial T} \right)_p + p \left( \frac{\partial V}{\partial T} \right)_p
+	\end{align}
+\end{frame}
+
+\subsection{2.3 The application of the first law to gases.}
+
+\begin{frame}{title}
+	\begin{align*}
+		\Delta U + L = 0
+	\end{align*}
+	\begin{align*}
+		\Delta U  = 0
+	\end{align*}
+\end{frame}
+
+
+\begin{frame}{title}
+	\begin{align}
+		C_V = \frac{d U}{dT}
+	\end{align}
+	\begin{align}
+		U = C_V T + W
+	\end{align}
+	\begin{align}
+		C_V dT + pdV = dQ
+	\end{align}
+	\begin{align}
+		pdV + Vdp = RdT
+	\end{align}
+\end{frame}
+
+\begin{frame}{title}
+	\begin{align}
+		(C_V + R)dT - Vdp = qQ
+	\end{align}
+	\begin{align}
+		C_p = \left( \frac{dQ}{dT} \right)_p = C_V + R
+	\end{align}
+\end{frame}
+
+\begin{frame}{title}
+	\begin{align}
+		\left( \frac{\partial U}{\partial T} \right)_p \frac{dU}{dT} = C_V; \quad \left( \frac{\partial V}{\partial T} \right)_p = \left( \frac{\partial}{\partial T} \frac{RT}{p} \right)_p = \frac{R}{p}
+	\end{align}
+\end{frame}
+
+\begin{frame}{title}
+	\begin{align}
+		C_V &= \frac{3}{2}R \ ({\rm for \ a \ monatomic \ gas} ) \notag \\
+		C_V &= \frac{5}{2}R \ ({\rm for \ a \ diatomic \ gas})
+	\end{align}
+	
+	\begin{align}
+		C_p &= \frac{5}{2} R \ ({\rm for \ a \ monatomic \ gas}) \notag \\
+		C_p &= \frac{7}{2} R \ ({\rm for \ a \ diatomic \ gas})
+	\end{align}
+\end{frame}
+
+\begin{frame}{title}
+\begin{align}
+	K = \frac{C_p}{C_V} = \frac{C_V + R}{C_V} = 1 + \frac{R}{C_V^\prime}
+\end{align}
+
+\begin{align}
+	K &= \frac{5}{3} \ ({\rm for \ a \ monatomic \ gas}) \notag \\
+	K &= \frac{7}{5} \ ({\rm for \ a \ diatomic \ gas})
+\end{align}
+\end{frame}
+\subsection{2.4 Adiabatic transformation of a gas.}
+
+\begin{frame}{title}
+	\begin{align*}
+		C_V dT + pdV = 0
+	\end{align*}
+	\begin{align*}
+		C_V dT + \frac{RT}{V}dV &= 0 \\
+		\frac{dT}{T} + \frac{R}{C_V}\frac{dV}{V} &= 0
+	\end{align*}
+	
+	\begin{align*}
+		\ln T + \frac{R}{C_V} \ln V = {\rm constant.}
+	\end{align*}
+\end{frame}
+
+\begin{frame}{title}
+	\begin{align*}
+		TV^{\frac{R}{C_V}} = {\rm constant.}
+	\end{align*}
+	\begin{align}
+		TV^{\frac{K-1}{K}} = {\rm constant.}
+	\end{align}
+\end{frame}
+
+\begin{frame}{title}
+	\begin{align}
+		pV^K &= {\rm constant.} \\
+		\frac{T}{p^{\frac{K-1}{K}}} &= {\rm constant.}
+	\end{align}
+	\begin{align*}
+		pV = {\rm constant.}
+	\end{align*}
+\end{frame}
+
+\begin{frame}{title}
+	\begin{align}
+		dp = - \rho gdh
+	\end{align}
+	\begin{align*}
+		dp = -\frac{gM}{R} \frac{p}{T}dh
+	\end{align*}
+	\begin{align*}
+		\frac{dT}{T} = \frac{K-1}{K} \frac{dp}{p}
+	\end{align*}
+	\begin{align}
+		\frac{dT}{dh} = -\frac{K-1}{K} \frac{gM}{R}
+	\end{align}
+\end{frame}
+
+\begin{frame}{title}
+	\begin{align*}
+		K = \frac{7}{5}; \ g = 980.665; \ M = 28.88; \ R=8.214 \times 10^7
+	\end{align*}
+	
+	\begin{align*}
+		\frac{dT}{dh} &= -9.8 \times 10^{-5} \ {\rm degrees / cm} \\
+		&= -9.8 \ {\rm degrees / kilometer}
+	\end{align*}
+\end{frame}
+
+\end{document}
+

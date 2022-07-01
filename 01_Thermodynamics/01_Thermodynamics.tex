@@ -1,0 +1,99 @@
+\documentclass[dvipdfmx, 10pt, aspectratio = 169]{beamer}
+
+\usepackage{graphicx}
+\usepackage{amsmath}
+\usepackage{bm}
+\usepackage{braket}
+
+\usetheme[
+	block = fill, 
+	progressbar = foot,
+	numbering = fraction
+]{metropolis}
+
+\setbeamerfont{frame numbering}{size = \normalsize}
+\usefonttheme[onlymath]{serif}
+
+\title{Thermodynamics}
+\subtitle{1 Thermodynamics Systems}
+\date{\today}
+\author{Enrico Fermi}
+
+\AtBeginSubsection[]{
+   \begin{frame}{目次}
+        \tableofcontents[currentsection, 
+        subsectionstyle = show/shaded/hide]
+    \end{frame}
+}
+
+\begin{document}
+
+\begin{frame}
+	\titlepage
+\end{frame}
+
+\begin{frame}{目次}
+\tableofcontents
+\end{frame}
+
+\section{1 Thermodaynamic Systems}
+\subsection{1.1 The state of a system and its transformation.}
+
+\begin{frame}{title}
+\begin{align}
+	f(p, V, t) = 0
+\end{align}
+\end{frame}
+
+\begin{frame}{title}
+	\begin{align}
+		dL = pSdh
+	\end{align}
+	
+	\begin{align}
+		dL = pdV
+	\end{align}
+	
+	\begin{align}
+		L = \int^B_A pdV
+	\end{align}
+	
+	\begin{align}
+		L = \int^{V_B}_{V_A} pdV
+	\end{align}
+\end{frame}
+
+\subsection{1.2 Ideal or perfect gases.}
+
+\begin{frame}{title}
+	\begin{align}
+		pV = \frac{m}{M}RT
+	\end{align}
+	\begin{align}
+		pV = RT
+	\end{align}
+	\begin{align}
+		\rho = \frac{m}{V} = \frac{Mp}{RT}
+	\end{align}
+\end{frame}
+
+\begin{frame}{title}
+	\begin{align*}
+		pV = {\rm constant.}
+	\end{align*}
+	
+	\begin{align}
+		L = \int^{V_2}_{V_1} pdV &= \frac{m}{M} RT \int^{V_2}_{V_1} \frac{dV}{V} \notag \\
+		&= \frac{m}{M}RT \ln \frac{V_2}{V_1} \notag \\
+		&= \frac{m}{M} RT \ln \frac{p_1}{p_2}
+	\end{align}
+	
+	\begin{align}
+		L = RT \ln \frac{V_2}{V_1} = RT \ln \frac{p_1}{p_2}
+	\end{align}
+\end{frame}
+
+\begin{frame}{Problems}
+\end{frame}
+
+\end{document}
